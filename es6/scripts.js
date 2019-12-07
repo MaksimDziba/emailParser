@@ -1,32 +1,5 @@
 import { watchObj, EmailParser } from './parser';
 
-// const restoran = {
-//   email: ''
-// }
-// const restHandler = {
-//   get: (target, prop) => {
-//     return target[prop]
-//   },
-//   set: (target, prop, value) => {
-//     target[prop] = value;
-//     target.isCorrect = true;
-
-//     if(target.isCorrect) {
-//       target.name = value.slice(0, value.indexOf('@'))
-//       target.domain = value.slice(value.indexOf('@') + 1)      
-//     }
-
-//     console.log(`${prop} has been added to inventory`); 
-//   }
-// }
-// const restProxy = new Proxy(restoran, restHandler);
-// restProxy.email = 'some@email.ru';
-
-// console.log(restProxy.email);
-// console.log(restProxy.name);
-// console.log(restProxy.domain);
-// console.log(restProxy.isCorrect);
-
 let parser = new EmailParser('info@ntschool.ru');
 console.log(parser.name);
 console.log(parser.domain);
