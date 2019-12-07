@@ -10,6 +10,7 @@ class EmailParser {
   }
 
   get isCorrect() {
+    // place regExp for check correct 
     return /^.+@.+\..+/.test(this.email);
   }
 
